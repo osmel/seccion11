@@ -1,14 +1,14 @@
-import { AppPage } from './app.po';
+import { Seccion11Page } from './app.po';
 
-describe('seccion11 App', () => {
-  let page: AppPage;
+describe('seccion11 App', function() {
+  let page: Seccion11Page;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new Seccion11Page();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
